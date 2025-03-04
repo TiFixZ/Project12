@@ -2,13 +2,80 @@
 #include <Windows.h>
 #include <string>
 #include <limits>
-#include <cstdlib> 
 
 #if defined(max)
 #undef max
 #endif
 
 using namespace std;
+
+//Среднее арифметическое
+/*
+double calc(int arr[], int size)
+{
+	int sum = 0;
+	for (int i = 0; i < size; i++) 
+	{
+		sum += arr[i];
+	}
+	double av = static_cast<double>(sum) / size;
+	return av;
+}
+*/
+
+//Кол-во положительных и отрицательных чисел
+/*
+void countNumbers(int arr[], int size, int& pos, int& neg, int& zero)
+{
+	pos = 0;
+	neg = 0;
+	zero = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] > 0)
+		{
+			pos++;
+		}
+		else if (arr[i] < 0)
+		{
+			neg++;
+		}
+		else
+		{
+			zero++;
+		}
+	}
+}
+*/
+
+//Сумма двух переменных
+/*
+int recursiveSum(int a, int b)
+{
+	if (b == 0)
+	{
+		return a;
+	}
+	return recursiveSum(a + 1, b - 1);
+}
+*/
+
+//Произведение двух переменных
+/*
+int recursiveMultiply(int a, int b)
+{
+	if (b == 0)
+	{
+		return 0;
+	}
+	if (b < 0)
+	{
+		return -recursiveMultiply(a, -b);
+	}
+	return a + recursiveMultiply(a, b - 1);
+}
+*/
 
 /*
 int SumPl(int oneC, int twoC)
@@ -642,6 +709,7 @@ for (int i = 0; i < Si; i++) {
 cout << endl;
 */
 
+// Сумки Макара
 	/*
 int otvet = 0;
 int kategory = 0;
@@ -816,9 +884,175 @@ if (chem_cou >= 3) {
 }
 
 cout << "Спасибо за покупку! Ваша итоговая сумма: " << tot << "р\n" << "СПАСИБО, ЖДЁМ ВАС ЕЩЁ!";
+*/   
+
+//Среднее арифметическое
+	/*
+	int arr[] = { 10, 20, 30, 40, 50 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+
+	double ave = calc(arr, size);
+	std::cout << "Среднее арифметическое: " << ave << std::endl;
+	*/
+
+//Кол-во положительных и отрицательных чисел
+	/*
+	int arr[] = { 10, -5, 0, 3, -2, 0, 7 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+
+	int positive, negative, zero;
+
+	countNumbers(arr, size, positive, negative, zero);
+
+	std::cout << "Положительных элементов: " << positive << std::endl;
+	std::cout << "Отрицательных элементов: " << negative << std::endl;
+	std::cout << "Нулевых элементов: " << zero << std::endl;
+	*/
+
+//Сумма двух переменных
+	/*
+int a, b;
+
+std::cout << "Введите первое число: ";
+std::cin >> a;
+std::cout << "Введите второе число: ";
+std::cin >> b;
+
+int result = recursiveSum(a, b);
+std::cout << "Сумма чисел: " << result << std::endl;
 */
 
+//Произведение двух переменных
+	/*
+int a, b;
+
+std::cout << "Введите первое число: ";
+std::cin >> a;
+std::cout << "Введите второе число: ";
+std::cin >> b;
+
+int result = recursiveMultiply(a, b);
+std::cout << "Произведение чисел: " << result << std::endl;
+*/
+
+//Минимальный и максимальный эллемент в массиве
+	/*
+const int size = 10;
+int arr[size];
+
+std::srand(42);
+
+for (int i = 0; i < size; i++)
+{
+	arr[i] = std::rand() % 100;
+}
+
+std::cout << "Массив: ";
+for (int i = 0; i < size; i++)
+{
+	std::cout << arr[i] << " ";
+}
+std::cout << std::endl;
+
+int min = arr[0];
+int max = arr[0];
+
+for (int i = 1; i < size; i++)
+{
+	if (arr[i] < min) {
+		min = arr[i];
+	}
+	if (arr[i] > max)
+	{
+		max = arr[i];
+	}
+}
+
+std::cout << "Минимальный элеиент: " << min << std::endl;
+std::cout << "Максимальный элемент: " << max << std::endl;
+*/
+
+//Заданный пользователем диапозон рандомных чисел с последущим нахождением минимального
+	/*
+int size;
+int lowerBound, upperBound;
+int userValue;
+
+std::cout << "Введите размер массива: ";
+std::cin >> size;
+
+std::cout << "Введите ниднюю границу диапазона: ";
+std::cin >> lowerBound;
+std::cout << "Введите верхнюю границу диапазона: ";
+std::cin >> upperBound;
+
+std::cout << "Введите значение для сравнегия: ";
+std::cin >> userValue;
+
+std::srand(42);
+
+int* arr = new int[size];
+for (int i = 0; i < size; i++) {
+	arr[i] = lowerBound + std::rand() % (upperBound - lowerBound + 1);
+}
+
+std::cout << "Массив: ";
+for (int i = 0; i < size; i++) {
+	std::cout << arr[i] << " ";
+}
+std::cout << std::endl;
+
+int sum = 0;
+for (int i = 0; i < size; i++) {
+	if (arr[i] < userValue) {
+		sum += arr[i];
+	}
+}
+
+std::cout << "Сумма элементов менших " << userValue << ": " << sum << std::endl;
+
+delete[] arr;
+*/
+
+//Прибыль бизнес
+	/*
+	const int mon = 12;
+	double pro[mon];
+
+	std::cout << "Введите прибыль фирмы за каждый месяц:" << std::endl;
+	for (int i = 0; i < mon; i++)
+	{
+		std::cout << "Месяц " << (i + 1) << ": ";
+		std::cin >> pro[i];
+	}
+
+	int startM;
+	int endM;
+	std::cout << "Введите начальный месяц диапазона: ";
+	std::cin >> startM;
+	std::cout << "Введите конечный месяц диапазона: ";
+	std::cin >> endM;
+
+	int minM = startM - 1;
+	int maxM = startM - 1;
+
+	for (int i = startM - 1; i < endM; i++)
+	{
+		if (pro[i] < pro[minM])
+		{
+			minM = i;
+		}
+		if (pro[i] > pro[maxM])
+		{
+			maxM = i;
+		}
+	}
+
+	std::cout << "Месяц с минимальной прибылью в диапазоне: " << (minM + 1) << std::endl;
+	std::cout << "Месяц с максималной прибылью в диапазоне: " << (maxM + 1) << std::endl;
+	*/
 	return 0;
 }
+
 
 
