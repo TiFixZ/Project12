@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//Среднее арифметическое
+//Srednee Arifmet
 /*
 double calc(int arr[], int size)
 {
@@ -23,7 +23,7 @@ double calc(int arr[], int size)
 }
 */
 
-//Кол-во положительных и отрицательных чисел
+//Kol-vo polozhitel'nykh i otritsatel'nykh chisel
 /*
 void countNumbers(int arr[], int size, int& pos, int& neg, int& zero)
 {
@@ -49,7 +49,7 @@ void countNumbers(int arr[], int size, int& pos, int& neg, int& zero)
 }
 */
 
-//Сумма двух переменных
+//Summa dvukh peremennykh
 /*
 int recursiveSum(int a, int b)
 {
@@ -61,7 +61,7 @@ int recursiveSum(int a, int b)
 }
 */
 
-//Произведение двух переменных
+//Proizvedeniye dvukh peremennykh
 /*
 int recursiveMultiply(int a, int b)
 {
@@ -709,7 +709,7 @@ for (int i = 0; i < Si; i++) {
 cout << endl;
 */
 
-// Сумки Макара
+// sumky Makara
 	/*
 int otvet = 0;
 int kategory = 0;
@@ -886,7 +886,7 @@ if (chem_cou >= 3) {
 cout << "Спасибо за покупку! Ваша итоговая сумма: " << tot << "р\n" << "СПАСИБО, ЖДЁМ ВАС ЕЩЁ!";
 */   
 
-//Среднее арифметическое
+//Srednee Arifmet
 	/*
 	int arr[] = { 10, 20, 30, 40, 50 };
 	int size = sizeof(arr) / sizeof(arr[0]);
@@ -895,7 +895,7 @@ cout << "Спасибо за покупку! Ваша итоговая сумма: " << tot << "р\n" << "СПАСИБО,
 	std::cout << "Среднее арифметическое: " << ave << std::endl;
 	*/
 
-//Кол-во положительных и отрицательных чисел
+//Kol-vo polozhitel'nykh i otritsatel'nykh chisel
 	/*
 	int arr[] = { 10, -5, 0, 3, -2, 0, 7 };
 	int size = sizeof(arr) / sizeof(arr[0]);
@@ -909,7 +909,7 @@ cout << "Спасибо за покупку! Ваша итоговая сумма: " << tot << "р\n" << "СПАСИБО,
 	std::cout << "Нулевых элементов: " << zero << std::endl;
 	*/
 
-//Сумма двух переменных
+//Summa dvukh peremennykh
 	/*
 int a, b;
 
@@ -922,7 +922,7 @@ int result = recursiveSum(a, b);
 std::cout << "Сумма чисел: " << result << std::endl;
 */
 
-//Произведение двух переменных
+//Proizvedeniye dvukh peremennykh
 	/*
 int a, b;
 
@@ -935,7 +935,7 @@ int result = recursiveMultiply(a, b);
 std::cout << "Произведение чисел: " << result << std::endl;
 */
 
-//Минимальный и максимальный эллемент в массиве
+//Minimal'nyy i maksimal'nyy element v massive
 	/*
 const int size = 10;
 int arr[size];
@@ -972,7 +972,7 @@ std::cout << "Минимальный элеиент: " << min << std::endl;
 std::cout << "Максимальный элемент: " << max << std::endl;
 */
 
-//Заданный пользователем диапозон рандомных чисел с последущим нахождением минимального
+//Zadannyy pol'zovatelem diapazon randomnykh chisel s posleduyushchim nakhozhdeniyem minimal'nogo
 	/*
 int size;
 int lowerBound, upperBound;
@@ -1014,7 +1014,7 @@ std::cout << "Сумма элементов менших " << userValue << ": " << sum << std::endl;
 delete[] arr;
 */
 
-//Прибыль бизнес
+//Pribyl' biznes
 	/*
 	const int mon = 12;
 	double pro[mon];
