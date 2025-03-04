@@ -162,7 +162,53 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
+	//Ymnozhenie ot a do 20
+	/*
+	int a = 0;
+	int size = 20;
+	long long res = 1;
 
+	cin >> a;
+
+	for (int i = a; i < size; i++)
+	{
+		res *= i;
+	}
+
+	cout << res;
+	*/
+
+	//Vozvodim v stepen
+	/*
+	int x = 0;
+	int y = 0;
+	int res = 1;
+
+	cin >> x;
+	cin >> y;
+
+	for (int i = 0; i < y; i++)
+	{
+		res *= x;
+	}
+
+	cout << res;
+	*/
+
+	//Chitaet summu chisel ot zadannogo polzovatelem do 500
+	/*
+	int a;
+	int res = 0;
+
+	cin >> a;
+
+	for (int i = a; i < 501; i++)
+	{
+		res += i;
+	}
+
+	cout << res;
+	*/
 
 	/*
 	std::getline(std::cin, world,'\n');
